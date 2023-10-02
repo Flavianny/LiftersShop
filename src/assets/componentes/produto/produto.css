@@ -1,0 +1,160 @@
+.topnav {
+    background-color: #0d0d0d;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: space-between
+}
+
+.topnav a {
+    float: left;
+    color: #eff2f6;
+    padding: 14px 14px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.topnav a:hover {
+    background-color: #0d0d0d;
+    color: #b3b3b3;
+}
+
+.topnav a.home {
+    color: #ddd;
+    font-weight: bold;
+    margin-left: 100px;
+}
+
+.topnav a.itens {
+    color: #b3b3b3;
+    font-size: 13px;
+    margin-top: 1px;
+}
+
+.search input[type=text] {
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: #0d0d0d;
+}
+
+.search {
+    margin: 7px;
+    margin-left: 0;
+    float: right;
+}
+
+.search button {
+    background-color: #0d0d0d;
+    color: #b3b3b3;
+    z-index: 10;
+    padding: 5px 5px;
+    margin-left: 5px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.bag {
+    float: left;
+    padding-top: 2px;
+    ;
+}
+
+.login {
+    float: right;
+    margin-right: 100px;
+}
+
+.album {
+    width: 40%;
+    max-width: 440px;
+    margin-left: 80px;
+    margin-top: 50px;
+}
+
+.galery {
+    margin: 1em 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 10px;
+}
+
+.dados-produto {
+    width: 60%;
+    margin-top: 70px;
+    margin-left: 50px;
+    display: grid;
+    align-content: space-between;
+    .titulo {
+        font-size: 24px;
+    }
+    .valor {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    .descricao {
+        font-size: 11px;
+        margin-top: 18px;
+        max-width: 220px;
+        line-height: 1.5;
+    }
+    .color {
+        font-size: 11px;
+        color: #9e9e9e;
+        margin-top: 6px;
+    }
+    .colors {
+        display: flex;
+        margin-top: 8px;
+        .radio {
+            height: 25px;
+            width: 25px;
+            margin-right: 4px;
+        }
+    }
+    .list-tamanhos {
+        display: flex;
+        margin-top: 8px;
+    }
+    .tamanho {
+        font-size: 9px;
+        width: 25px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        border: 1px solid black;
+        margin-right: 5px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .back {
+        background-color: #0d0d0d;
+        color: #ddd;
+        font-size: 10px;
+        padding: 8px 30px;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+}
+
+.grid {
+    display: flex;
+}
+
+@media (max-width: 910px) {
+    .topnav a.home {
+        margin-left: 10px;
+    }
+    .topnav {
+        text-align: initial;
+    }
+    .search input[type=text] {
+        width: 100px;
+        height: 30px;
+        border-radius: 20px;
+        border: none;
+        background-color: #0d0d0d;
+    }
+}

@@ -1,0 +1,213 @@
+body {
+    font-family: Arial;
+    background-color: #eff2f6;
+}
+
+.barra {
+    background-color: #0d0d0d;
+    color: #d5d5d5;
+    .titulo {
+        margin-left: 100px;
+    }
+}
+
+.barra p {
+    font-size: 12px;
+    width: 320px;
+    padding-bottom: 30px;
+}
+
+.barra h4 {
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.barra h2 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-weight: normal;
+}
+
+hr {
+    height: 0.1pt;
+    border: none;
+    background: #383838;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.wrapper {
+    width: 85%;
+    max-width: 600px;
+    .card-showing {
+        padding-top: 60px;
+        padding-bottom: 6px;
+        .showing {
+            font-size: 10px;
+            font-weight: bold;
+            color: #383838;
+            float: right;
+        }
+    }
+}
+
+.card-grid {
+    margin: 1em 0;
+    display: grid;
+    justify-content: initial;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 20px;
+}
+
+.card {
+    padding: 0px;
+    box-shadow: 0px 2px 4px var(--border);
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    &:hover {
+        transform: scale(1.1);
+        .card-content {
+            h2 {
+                overflow: visible;
+            }
+        }
+    }
+}
+
+.card-image {
+    max-height: 250px;
+    overflow: hidden;
+}
+
+.card-image img {
+    min-height: 100%;
+    width: 100%;
+    object-position: center;
+}
+
+.card-content .card-name {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 4px;
+    align-items: initial;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    color: #0d0d0d;
+}
+
+.grade {
+    display: flex;
+    align-items: initial;
+}
+
+.filters {
+    width: 15%;
+    padding-top: 35px;
+    margin-left: 100px;
+    margin-right: 50px;
+    .filters-titulo {
+        display: flex;
+        .link {
+            font-size: 10px;
+            margin-top: 3px;
+            margin-left: 10px;
+            color: #cdcdcd;
+            white-space: nowrap;
+            text-decoration: underline;
+        }
+    }
+    .filters-name {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .categories {
+        font-size: 10px;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: #0d0d0d;
+    }
+    .checkbox-list {
+        display: grid;
+        justify-content: start;
+        margin-top: 10px;
+        .checkbox {
+            margin-top: 5px;
+        }
+        .checkbox-titulo {
+            font-size: 8.5px;
+            margin-left: 5px;
+            margin-top: 3px;
+        }
+        .checkbox-opcoes {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2px;
+        }
+    }
+    .colors {
+        display: flex;
+        .radio {
+            margin-right: 5px;
+        }
+    }
+}
+
+li {
+    list-style-type: none;
+}
+
+.colors input[type="checkbox"] {
+    -webkit-appearance: none;
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 15px;
+    height: 15px;
+}
+
+.colors input[type="checkbox"] :checked {
+    color: black;
+}
+
+.a:hover,
+.a:visited,
+.a:focus,
+.a:active .a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (max-width: 600px) {
+    .grade {
+        display: grid;
+    }
+    .filters {
+        width: 90%;
+        margin-left: 20px;
+        .checkbox-opcoes {
+            margin-right: 5px;
+        }
+        .checkbox-list {
+            display: flex;
+        }
+    }
+    .wrapper {
+        width: 90%;
+        max-width: 600px;
+        margin-left: 20px;
+        .card-showing {
+            padding-top: 20px;
+            padding-bottom: 5px;
+        }
+    }
+}
