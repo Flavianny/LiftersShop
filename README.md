@@ -1,8 +1,27 @@
-# React + Vite
+<h1 align="center">LiftersShop</h1>
+<p align="center">Desafio Front-end de um e-commerce da Lifters.</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Features
 
-Currently, two official plugins are available:
+- [x] Listagem de produtos
+- [x] Visualizar produto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Demonstração
+<div> 
+  <img src="https://github.com/Flavianny/LiftersShop/assets/56006591/b0469511-d49f-4fbd-92ea-eef866f61880" width="500">
+</div>
+<br>
+<div> 
+  <img src="https://github.com/Flavianny/LiftersShop/assets/56006591/4243ea41-7ae4-4892-b3b2-b247e49df209" width="500">
+</div>
+
+### Tecnologias
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+- [Node.js](https://nodejs.org/en/)
+- [React](https://pt-br.reactjs.org/)
+- [React Native](https://reactnative.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+
+
